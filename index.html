@@ -7,8 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white"> 
+    <!-- Hero Section -->
     <section class="relative text-center bg-black text-white py-4">
-        <nav class="space-x-9 text-lg">
+        <nav class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-9 text-lg">
             <a href="#aboutsec" class="hover:text-yellow-300 font-bold">ABOUT</a>
             <a href="#aboutcourse" class="hover:text-yellow-300 font-bold">COURSES</a>
             <a href="#aboutcontact" class="hover:text-yellow-300 font-bold">CONTACT</a>
@@ -18,37 +19,37 @@
                 title="Web Technology Banner"
                 src="assets/cov1.png" 
                 alt="Web Tech Cover"
-                class="w-full object-cover mx-auto shadow-lg rounded-lg"/>
+                class="w-full h-64 md:h-auto object-cover mx-auto shadow-lg rounded-lg"/>
 
-            <h1 class="absolute top-36 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl font-extrabold">
-                Welcome to Web Tech
-            </h1>
-
-            <div class="absolute top-52 left-1/2 transform -translate-x-1/2 w-3/4 bg-black bg-opacity-50 
-            rounded-lg p-6 transition duration-300 ease-in-out hover:bg-opacity-80 shadow-lg hover:shadow-xl">
-                <p class="text-center text-white text-l leading-relaxed font-semibold tracking-wide italic 
-                transition duration-300 ease-in-out hover:text-yellow-300">
-                    Web technology is the backbone of modern digital solutions. From building
-                    stunning websites to developing interactive applications, web technologies 
-                    empower businesses, individuals, and communities worldwide. Whether you're 
-                    a beginner learning the basics or an experienced developer enhancing your skills, 
-                    Web Tech provides the tools and knowledge you need to succeed.
-                </p>
+            <!-- Heading and Paragraph -->
+            <div class="mt-8 md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 w-full md:w-3/4 px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+                    Welcome to Web Tech
+                </h1>
+                <div class="bg-black bg-opacity-50 rounded-lg p-4 md:p-6 transition duration-300 ease-in-out hover:bg-opacity-80 shadow-lg hover:shadow-xl">
+                    <p class="text-center text-white text-sm md:text-lg leading-relaxed font-semibold tracking-wide italic transition duration-300 ease-in-out hover:text-yellow-300">
+                        Web technology is the backbone of modern digital solutions. From building
+                        stunning websites to developing interactive applications, web technologies 
+                        empower businesses, individuals, and communities worldwide. Whether you're 
+                        a beginner learning the basics or an experienced developer enhancing your skills, 
+                        Web Tech provides the tools and knowledge you need to succeed.
+                    </p>
+                </div>
             </div>
 
-            <a href="#admission" 
-            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white 
-                   font-bold py-5 px-10 rounded-tl-lg rounded-tr-lg rounded-b-none shadow-lg transition 
-                   duration-300 ease-in-out border-2 border-white hover:bg-opacity-80 hover:border-purple-400 
-                   hover:scale-105" onclick="toggleModal()">
-                Begin Your Journey
-            </a>
+            <!-- Begin Your Journey Button -->
+            <div class="mt-8 md:absolute md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2 w-full px-4">
+                <a href="#admission" 
+                   class="inline-block bg-black bg-opacity-50 text-white font-bold py-3 px-6 md:py-5 md:px-10 rounded-tl-lg rounded-tr-lg rounded-b-none shadow-lg transition duration-300 ease-in-out border-2 border-white hover:bg-opacity-80 hover:border-purple-400 hover:scale-105 z-10" onclick="toggleModal()">
+                    Begin Your Journey
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Admission Modal -->
     <div id="admission-modal" class="fixed inset-0 flex items-center justify-center z-50 hidden" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="bg-white rounded-lg shadow-lg p-8 w-11/12 max-w-lg">
+        <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 w-11/12 max-w-lg">
             <h2 class="text-2xl font-semibold mb-4">Admission Form</h2>
             <form action="#" method="POST">
                 <div class="mb-4">
@@ -106,7 +107,7 @@
     </script>
 
     <!-- About Section -->
-    <section id="aboutsec" class="mt-16">
+    <section id="aboutsec" class="mt-16 px-4 md:px-0">
         <h2 class="text-4xl font-semibold text-center mb-6 bg-gradient-to-r from-purple-500 to-yellow-500 p-2 rounded-lg shadow-md">
             ABOUT US
         </h2>
@@ -150,73 +151,69 @@
     </section>
 
     <!-- Courses Section -->
-  <!-- Courses Section -->
-<section id="aboutcourse" class="mt-16 bg-gray-900 py-8 rounded-lg shadow-md">
-  <div class="text-center mb-4">
-      <h2 class="text-4xl font-semibold text-center mb-6 bg-gradient-to-r from-purple-500 to-yellow-500 p-2 rounded-lg shadow-md">
-          OUR COURSES
-      </h2>
-    
-  </div>
-  
-  <p class="text-justify text-lg leading-relaxed mb-6">
-      Our courses are designed to cater to all levels, from beginners to advanced developers.
-      We focus on both theoretical concepts and hands-on projects to ensure you gain 
-      practical experience. Below are some of the popular courses we offer:
-  </p>
+    <section id="aboutcourse" class="mt-16 bg-gray-900 py-8 rounded-lg shadow-md px-4 md:px-0">
+        <div class="text-center mb-4">
+            <h2 class="text-4xl font-semibold text-center mb-6 bg-gradient-to-r from-purple-500 to-yellow-500 p-2 rounded-lg shadow-md">
+                OUR COURSES
+            </h2>
+        </div>
+        
+        <p class="text-justify text-lg leading-relaxed mb-6">
+            Our courses are designed to cater to all levels, from beginners to advanced developers.
+            We focus on both theoretical concepts and hands-on projects to ensure you gain 
+            practical experience. Below are some of the popular courses we offer:
+        </p>
 
-  <section id="courseslist" class="mt-8">
-      <h3 class="text-3xl font-semibold mb-4 text-yellow-300">Popular Courses:</h3>
-      <ol class="list-decimal list-inside space-y-2 mb-6">
-          <li><strong>Python:</strong> Learn the fundamentals of Python and explore its applications in data science, web development, and AI.</li>
-          <li><strong>JavaScript:</strong> Master JavaScript to build interactive web pages and dynamic front-end interfaces.</li>
-          <li><strong>Node.js:</strong> Dive into server-side programming with Node.js and create scalable web applications.</li>
-      </ol>
-  </section>
+        <section id="courseslist" class="mt-8">
+            <h3 class="text-3xl font-semibold mb-4 text-yellow-300">Popular Courses:</h3>
+            <ol class="list-decimal list-inside space-y-2 mb-6">
+                <li><strong>Python:</strong> Learn the fundamentals of Python and explore its applications in data science, web development, and AI.</li>
+                <li><strong>JavaScript:</strong> Master JavaScript to build interactive web pages and dynamic front-end interfaces.</li>
+                <li><strong>Node.js:</strong> Dive into server-side programming with Node.js and create scalable web applications.</li>
+            </ol>
+        </section>
 
-  <div class="flex justify-center space-x-6 mt-8">
-      <a href="https://www.python.org/" target="_blank">
-          <img src="assets/python.webp" alt="Python Logo" class="w-40" />
-      </a>
-      <a href="https://www.w3schools.com/js/" target="_blank">
-          <img src="assets/java.webp" alt="JavaScript Logo" class="w-40" />
-      </a>
-      <a href="https://nodejs.org/en" target="_blank">
-          <img src="assets/node.svg" alt="Node.js Logo" class="w-44" />
-      </a>
-  </div>
-</section>
-
+        <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6 mt-8">
+            <a href="https://www.python.org/" target="_blank">
+                <img src="assets/python.webp" alt="Python Logo" class="w-40 mx-auto" />
+            </a>
+            <a href="https://www.w3schools.com/js/" target="_blank">
+                <img src="assets/java.webp" alt="JavaScript Logo" class="w-40 mx-auto" />
+            </a>
+            <a href="https://nodejs.org/en" target="_blank">
+                <img src="assets/node.svg" alt="Node.js Logo" class="w-44 mx-auto" />
+            </a>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="aboutcontact" class="mt-16">
-      <h2 class="text-4xl font-semibold text-center mb-6 bg-gradient-to-r from-green-500 to-teal-500 p-2 rounded-lg shadow-md">
-          CONTACT US
-      </h2>
-      <p class="text-justify text-lg leading-relaxed mb-6">
-          We would love to hear from you! Whether you have questions about our courses, need assistance with 
-          your learning journey, or want to provide feedback, feel free to reach out to us through the 
-          contact form below or via our social media channels.
-      </p>
-      <form action="#" method="POST" class="mb-6">
-          <div class="mb-4">
-              <label class="block text-sm font-medium text-white">Name</label>
-              <input type="text" name="name" required class="mt-1 p-2 border border-gray-300 rounded w-full" />
-          </div>
-          <div class="mb-4">
-              <label class="block text-sm font-medium text-white">Email</label>
-              <input type="email" name="email" required class="mt-1 p-2 border border-gray-300 rounded w-full" />
-          </div>
-          <div class="mb-4">
-              <label class="block text-sm font-medium text-white">Message</label>
-              <textarea name="message" required class="mt-1 p-2 border border-gray-300 rounded w-full" rows="4"></textarea>
-          </div>
-          <button type="submit" class="bg-purple-900 text-white font-bold py-2 px-4 rounded hover:bg-purple-700 transition duration-200">
-              Send Message
-          </button>
-      </form>
-  </section>
-  
+    <section id="aboutcontact" class="mt-16 px-4 md:px-0">
+        <h2 class="text-4xl font-semibold text-center mb-6 bg-gradient-to-r from-green-500 to-teal-500 p-2 rounded-lg shadow-md">
+            CONTACT US
+        </h2>
+        <p class="text-justify text-lg leading-relaxed mb-6">
+            We would love to hear from you! Whether you have questions about our courses, need assistance with 
+            your learning journey, or want to provide feedback, feel free to reach out to us through the 
+            contact form below or via our social media channels.
+        </p>
+        <form action="#" method="POST" class="mb-6">
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-white">Name</label>
+                <input type="text" name="name" required class="mt-1 p-2 border border-gray-300 rounded w-full" />
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-white">Email</label>
+                <input type="email" name="email" required class="mt-1 p-2 border border-gray-300 rounded w-full" />
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-white">Message</label>
+                <textarea name="message" required class="mt-1 p-2 border border-gray-300 rounded w-full" rows="4"></textarea>
+            </div>
+            <button type="submit" class="bg-purple-900 text-white font-bold py-2 px-4 rounded hover:bg-purple-700 transition duration-200">
+                Send Message
+            </button>
+        </form>
+    </section>
 
     <footer class="bg-gray-800 text-white text-center py-4 mt-16">
         <p>&copy; 2024 Web Tech. All Rights Reserved.</p>
